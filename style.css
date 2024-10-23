@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background: linear-gradient(to right, #6dd5ed, #2193b0); /* Gradiente de fundo */
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#poema {
+    font-size: 20px;
+    line-height: 1.6;
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 1s;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
+    border-radius: 10px;
+}
+
+#imagem-liberdade {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#importancia {
+    margin: 20px 0;
+}
+
+h2 {
+    color: #ffeb3b; /* Amarelo */
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff5722; /* Laranja */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #e64a19; /* Laranja escuro */
+}
+
+button:active {
+    transform: scale(0.95); /* Efeito ao clicar */
+}
+
+#mensagem {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #ffeb3b; /* Amarelo */
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#carrossel {
+    margin: 20px 0;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    height: 60px; /* Altura do carrossel */
+}
+
+.citação {
+    display: none;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.citação.active {
+    display: block; /* Apenas a citação ativa é exibida */
+   
+}
